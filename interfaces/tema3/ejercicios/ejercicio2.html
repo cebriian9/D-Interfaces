@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+    <style>
+        form {
+            display: flex;
+            justify-content: center;
+        }
+
+        div.general {
+            justify-content: center;
+        }
+
+        table{
+            border: 2px solid black;
+        }
+
+        body {
+            
+            padding-top: 50px;
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+
+        .derecha {
+            text-align: right;
+
+        }
+
+        .izquierda {
+            text-align: left;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .centro {
+            text-align: center;
+        }
+
+        textarea {
+            width: 98%;
+            height: 98%;
+            resize: none;
+        }
+
+        footer {
+            text-align: center;
+            bottom: 0;
+            
+        }
+
+        /*
+        td {
+            border: 2px solid black;
+        }
+
+        tr {
+            border: 2px solid black;
+        }*/
+    </style>
+</head>
+
+<body>
+    <div class="general">
+        <form>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <img src="https://static.wikia.nocookie.net/memes-pedia/images/4/4f/518.webp/revision/latest?cb=20210302140656&path-prefix=es"
+                            alt="coche">
+                    </td>
+                    <td colspan="2">
+                        <h3>Reserva de coches</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="derecha" colspan="2">
+                        <span>Nombre: <input type="text" placeholder="nombre"></span><br>
+                        <span>1ºapellido: <input type="text" placeholder="primer apellido"></span><br>
+                        <span>2ºapellido: <input type="text" placeholder="segundo apellido"></span><br>
+                        <br>
+                        <div class="izquierda">
+                            <span>D.N.I.: <input type="text" placeholder="nº DNI"></span>
+                            <br><br>
+                            <span>Caducidad del carnet: <input type="date"></span>
+                        </div>
+
+
+                    </td>
+                    <td class="izquierda" colspan="2">
+                        <span><input type="email" placeholder="introduce tu Correo">:Correo</span><br>
+                        <span><input type="password" placeholder="introduce Contraseña">:Contraseña</span><br>
+                        <span><input type="password" placeholder="repite Contraseña">:Repetir Contraseña</span><br>
+                        <br>
+                        <div class="derecha">
+                            <span><input type="date">:Fecha de nacimiento</span>
+                            <br><br>
+                            <span><input type="date">:Antiguedad del carnet</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <nav class="izquierda">
+                            <button><img
+                                    src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/check-mark_2714-fe0f.png"
+                                    alt="v">
+                            </button>
+                        </nav>
+                    </td>
+                    <td>
+                        <nav class="centro">
+                            <p>Fecha recogida</p>
+                            <input type="date">
+                            <p>Hora recogida</p>
+                            <input type="time">
+                        </nav>
+                    </td>
+                    <td>
+                        <nav class="centro">
+                            <p>Fecha devoluion</p>
+                            <input type="date">
+                            <p>Hora devoluion</p>
+                            <input type="time">
+                        </nav>
+                    </td>
+                    <td>
+                        <nav class="derecha">
+                            <button> <img src="https://images.emojiterra.com/mozilla/512px/274c.png" alt="x"></button>
+                        </nav>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>Selecciona coche:</p>
+                        <select name="coches" id="coches" multiple>
+                            <optgroup label="seleccion Marca Kia">
+                                <option>Picanto</option>
+                                <option>Cerato</option>
+                            </optgroup>
+                            <optgroup label="seleccion Marca Toyota">
+                                <option>aygo</option>
+                                <option>Yaris</option>
+                            </optgroup>
+                            <optgroup label="seleccion Marca Volkswagen">
+                                <option>Golf</option>
+                                <option>T-Roc</option>
+                            </optgroup>
+                            <optgroup label="seleccion Marca Seat">
+                                <option>ibiza</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                    <td colspan="2" style="padding-top: 7%;">
+                        <fieldset>
+                            <legend>Combustible:</legend>
+
+                            <div>
+                                <input type="radio" id="gasoil" name="1">
+                                <label for="gasoil">Gasoil</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="gasolina" name="1">
+                                <label for="gasolina">Gasolina</label>
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="centro">
+                        <p>Observaciones</p>
+                        <textarea rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <input type="checkbox" name="terminos" id="term">
+                        <label for="term">Acepto los terminos y condiciones</label>
+                        <br>
+                        <input type="checkbox" name="terminos" id="term">
+                        <label for="term">Acepto que me reventeis el gmail a promociones</label>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <br>
+    <footer>
+        © Raul Rodriguez Cebrian
+    </footer>
+
+</body>
+
+</html>
