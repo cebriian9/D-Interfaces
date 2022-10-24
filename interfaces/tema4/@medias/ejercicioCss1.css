@@ -1,4 +1,4 @@
-    @media screen  {
+    @media all {
         img{
             display: block;
             margin: auto;
@@ -7,7 +7,16 @@
         p{
             font-size: 20px;
             font-weight: 900;
+            text-align: left;
+            color: brown;
         }
     }
 
-    @import url(ejercicioCss.html) screen;
+    @media print {
+        
+        p{
+            color: green;
+        }
+    }
+
+    
