@@ -13,6 +13,12 @@
 
         .contenedor{
             display: flex;
+            border: 10px solid goldenrod;
+
+            flex-wrap: wrap;
+            flex-direction: column;
+            height: 100vh;
+
         }
 
 
@@ -22,13 +28,15 @@
             padding: 20px;
             text-shadow: 4px 4px rgba(0, 0, 0, 0.2);
             color: white;
+
+            
         }
 
 
-        .box1 { background:#1abc9c; flex: 4;}
-        .box2 { background:#3498db; flex: 1;}
-        .box3 { background:#9b59b6;}
-        .box4 { background:#34495e;}
+        .box1 { background:#1abc9c; flex-basis: 200px; flex-grow: 5;}
+        .box2 { background:#3498db;}
+        .box3 { background:#9b59b6; flex-grow: 5;}
+        .box4 { background:#34495e; flex-basis: 250px; flex-grow: 2;}
         .box5 { background:#f1c40f;}
         .box6 { background:#e67e22;}
         .box7 { background:#e74c3c;}
@@ -41,6 +49,10 @@
     <div class="contenedor">
         <div class="box box1">uno💩</div>
         <div class="box box2">dos💩</div>
-      </div>
+        <div class="box box3">tré💩</div>
+        <div class="box box4">cuatro💩</div>
+        <div class="box box5">cuatro+1💩</div>
+        <div class="box box6">seis💩</div>
+    </div>
 </body>
 </html>
