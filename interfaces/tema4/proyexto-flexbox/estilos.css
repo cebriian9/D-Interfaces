@@ -1,0 +1,28 @@
+.rrc_explicacion{
+    border: 1px solid black;
+    padding: 30px;
+    background-color: #E7E9EB;
+}
+
+.rrc_texto{
+    color: black;
+    /**/
+}
+
+.center_contenedor {
+    border: 2px solid black;
+    max-width: 500px;
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: DodgerBlue;
+}
+
+.center_contenedor>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
