@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +8,157 @@
     <title>Flex-box</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
-    
+
     <div class="seccion">
-        <h2>Propiedades justify-content</h2>
-        <ul>
-            <li><a href="#center">center</a></li>
-            <li>flex-star</li>
-            <li>flex-end</li>
-            <li>space-around</li>
-            <li>space-between</li>
-        </ul>
-        <nav class="rrc_explicacion" >
-            <h3 id="center">Center</h3>
-            <p class="rrc_texto">Esta propiedad lo que hace es alinear los elementos al centro del contenedor</p>
-            <p>.flex-container {<br>
-                display: flex;<br>
-                justify-content: center;<br>
-              }
-            </p>
-        </nav>
-        <div class="rrc_enseño center_contenedor">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+        <!----------------------------------------------------->
+        <div class="rrc-marco-indice">
+            <div>
+                <h2>Propiedades justify-content</h2>
+            <ul class="rrc-indice">
+                <li><a href="#center">center</a></li>
+                <li><a href="#flex-star">flex-star</a></li>
+                <li><a href="#flex-end">flex-end</a></li>
+                <li><a href="#space-around">space-around</a></li>
+                <li><a href="#space-between">space-between</a></li>
+            </ul>
+            </div>
         </div>
+        <!------------------------------------------------------>
+        <br>
+        <!--center-->
+        <div id="center">
+            <nav class="rrc-explicacion">
+                <h3>Center</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Esta propiedad lo que hace es alinear los elementos al centro del contenedor</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .flex-container {<br>
+                    display: flex;<br>
+                    justify-content: center;<br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño center-contenedor">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </nav>
+            <br>
+        </div>
+        <!------------------------------------------------------>
+        <!------------------------------------------------------>
+        <br>
+        <!--flex-star-->
+        <div id="flex-star">
+            <nav class="rrc-explicacion">
+                <h3>flex-star</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Esta propiedad alinea sus elementos al incio del contenedor</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .flex-container {<br>
+                    display: flex;<br>
+                    justify-content: flex-star;<br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño start-contenedor">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </nav>
+            <br>
+
+        </div>
+        <!------------------------------------------------------>
+        <!------------------------------------------------------>
+        <br>
+        <!--flex-end-->
+        <div id="flex-end">
+            <nav class="rrc-explicacion">
+                <h3>flex-end</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Esta propiedad alinea sus elementos al final del contenedor</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .flex-container {<br>
+                    display: flex;<br>
+                    justify-content: flex-end;<br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño end-contenedor">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </nav>
+            <br>
+
+        </div>
+        <!------------------------------------------------------>
+        <!------------------------------------------------------>
+        <br>
+        <!--space-around-->
+        <div id="space-around">
+            <nav class="rrc-explicacion">
+                <h3>space-around</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Esta propiedad da espacios iguales antes y entre sus elemnetos</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .flex-container {<br>
+                    display: flex;<br>
+                    justify-content: space-around;<br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño around-contenedor">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </nav>
+            <br>
+
+        </div>
+        <!------------------------------------------------------>
+        <!------------------------------------------------------>
+        <br>
+        <!--space-between-->
+        <div id="space-between">
+            <nav class="rrc-explicacion">
+                <h3>space-between</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Esta propiedad da espacios iguales solo entre sus elemnetos</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .flex-container {<br>
+                    display: flex;<br>
+                    justify-content: space-between;<br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño between-contenedor">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </nav>
+            <br>
+        </div>
+        <!------------------------------------------------------>
+        <!----------------------FIN-JUSTIFY--------------------->
+        <!----------------------------------------------------->
+
+
     </div>
 
 </body>
+
 </html>
