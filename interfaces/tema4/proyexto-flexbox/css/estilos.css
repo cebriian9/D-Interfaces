@@ -1,25 +1,44 @@
 /*propiedades direccion*/
-.column{
-display: flex;
-flex-direction: column;
+.column {
+    display: flex;
+    flex-direction: column;
 }
 
-.column-reverse{
+.column-reverse {
     display: flex;
     flex-direction: column-reverse;
 }
 
-.row{
+.row {
     display: flex;
     flex-direction: row;
 }
 
-.row-reverse{
+.row-reverse {
     display: flex;
     flex-direction: row-reverse;
 }
 
 /*FIN propiedades de direccion*/
+/*------------------------------------*/
+/*Propiedades de envoltura flexible*/
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nowrap {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.wrap-reverse {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+/*FIN proiedades envoltura flexible*/
 /*------------------------------------*/
 /*propiedades justify-content*/
 .center-contenedor {
@@ -51,4 +70,13 @@ flex-direction: column;
     justify-content: space-between;
 
 }
+
 /* FIN propiedades justify-content FIN*/
+/*------------------------------------*/
+/*propiedades align-content*/
+.space-between{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+/*FIN propiedades align-content*/
