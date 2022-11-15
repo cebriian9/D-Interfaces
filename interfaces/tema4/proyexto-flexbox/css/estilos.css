@@ -14,6 +14,11 @@ flex-direction: column;
     flex-direction: row;
 }
 
+.row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 /*FIN propiedades de direccion*/
 /*------------------------------------*/
 /*propiedades justify-content*/
