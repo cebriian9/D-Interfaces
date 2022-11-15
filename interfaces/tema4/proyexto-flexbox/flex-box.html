@@ -6,48 +6,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex-box</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="css.css">
+    
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
 
+    <h2>Flex-box</h2>
+
+
+    <!------------------------------------------------------>
+    <!-----------------------DIRECCION---------------------->
+    <!------------------------------------------------------>
     <div class="seccion">
         <div class="rrc-marco-indice">
             <div>
-                <h2>Propiedades direccion</h2>
+                <h2>Propiedades dirección</h2>
                 <ul class="rrc-indice">
-                    <li><a href="#column">column</a></li>
-                    <li><a href="#olumn-reverse">column-reverse</a></li>
-                    <li><a href="#row">row</a></li>
-                    <li><a href="#space-around">row-reverse</a></li>
+                    <li><a href="#column">Column</a></li>
+                    <li><a href="#column-reverse">Column-reverse</a></li>
+                    <li><a href="#row">Row</a></li>
+                    <li><a href="#space-around">Row-reverse</a></li>
                 </ul>
             </div>
         </div>
         <!------------------------------------------------------>
         <br>
-        <!--center-->
-        <div id="center">
+        <!--Column-->
+        <div id="column">
             <nav class="rrc-explicacion">
-                <h3>Center</h3>
+                <h3>Column</h3>
                 <!--Explicacion-->
-                <p class="rrc-texto">Esta propiedad lo que hace es alinear los elementos al centro del contenedor</p>
+                <p class="rrc-texto">Apila los objetos de arriba hacia abajo</p>
                 <p class="rrc-codigo">
                     <!--codigo-->
                     .flex-container {<br>
                     display: flex;<br>
-                    justify-content: center;<br>
+                    flex-direction: column;<br>
                     }
                 </p>
                 <!--muestra-->
-                <div class="rrc-enseño center-contenedor">
+                <div class="rrc-enseño column">
                     <div>1</div>
                     <div>2</div>
                     <div>3</div>
                 </div>
             </nav>
         </div>
-    </div>
+        <!------------------------------------------------------>
+        <!------------------------------------------------------>
+        <br>
+        <!--Column-reverse-->
+        <div id="column-reverse">
+            <nav class="rrc-explicacion">
+                <h3>Column-reverse</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Apila los objetos de arriba hacia abajo</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .flex-container {<br>
+                    display: flex;<br>
+                    flex-direction: column-reverse;<br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño column-reverse">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </nav>
+        </div>
+        <!------------------------------------------------------>
+        <!------------------------------------------------------>
+        <br>
+        <!--row-->
+        <div id="row">
+            <nav class="rrc-explicacion">
+                <h3>Row</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Esta propiedad apila los elemntos horizontalmente</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .flex-container {<br>
+                    display: flex;<br>
+                    flex-direction: row;<br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño row">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </nav>
+        </div>
+        <!------------------------------------------------------>     
+        
+    <!------------------------------------------------------>
+    <!-----------------------FIN-DIRECCION------------------>
+    <!------------------------------------------------------>
+
+    <!------------------------------------------------------>
+    <!-----------------------JUSTIFY------------------------>
     <!------------------------------------------------------>
 
     <div class="seccion">
@@ -86,7 +148,6 @@
                     <div>3</div>
                 </div>
             </nav>
-            <br>
         </div>
         <!------------------------------------------------------>
         <!------------------------------------------------------>
@@ -111,8 +172,6 @@
                     <div>3</div>
                 </div>
             </nav>
-            <br>
-
         </div>
         <!------------------------------------------------------>
         <!------------------------------------------------------>
@@ -137,8 +196,6 @@
                     <div>3</div>
                 </div>
             </nav>
-            <br>
-
         </div>
         <!------------------------------------------------------>
         <!------------------------------------------------------>
@@ -163,8 +220,6 @@
                     <div>3</div>
                 </div>
             </nav>
-            <br>
-
         </div>
         <!------------------------------------------------------>
         <!------------------------------------------------------>
@@ -189,7 +244,6 @@
                     <div>3</div>
                 </div>
             </nav>
-            <br>
         </div>
         <!------------------------------------------------------>
         <!----------------------FIN-JUSTIFY--------------------->
@@ -197,4 +251,3 @@
 
 
     </div>
-
