@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,22 +7,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex-box</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css.css">
 </head>
 
 <body>
+
+    <div class="seccion">
+        <div class="rrc-marco-indice">
+            <div>
+                <h2>Propiedades direccion</h2>
+                <ul class="rrc-indice">
+                    <li><a href="#column">column</a></li>
+                    <li><a href="#olumn-reverse">column-reverse</a></li>
+                    <li><a href="#row">row</a></li>
+                    <li><a href="#space-around">row-reverse</a></li>
+                </ul>
+            </div>
+        </div>
+        <!------------------------------------------------------>
+        <br>
+        <!--center-->
+        <div id="center">
+            <nav class="rrc-explicacion">
+                <h3>Center</h3>
+                <!--Explicacion-->
+                <p class="rrc-texto">Esta propiedad lo que hace es alinear los elementos al centro del contenedor</p>
+                <p class="rrc-codigo">
+                    <!--codigo-->
+                    .flex-container {<br>
+                    display: flex;<br>
+                    justify-content: center;<br>
+                    }
+                </p>
+                <!--muestra-->
+                <div class="rrc-enseño center-contenedor">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!------------------------------------------------------>
 
     <div class="seccion">
         <!----------------------------------------------------->
         <div class="rrc-marco-indice">
             <div>
                 <h2>Propiedades justify-content</h2>
-            <ul class="rrc-indice">
-                <li><a href="#center">center</a></li>
-                <li><a href="#flex-star">flex-star</a></li>
-                <li><a href="#flex-end">flex-end</a></li>
-                <li><a href="#space-around">space-around</a></li>
-                <li><a href="#space-between">space-between</a></li>
-            </ul>
+                <ul class="rrc-indice">
+                    <li><a href="#center">center</a></li>
+                    <li><a href="#flex-star">flex-star</a></li>
+                    <li><a href="#flex-end">flex-end</a></li>
+                    <li><a href="#space-around">space-around</a></li>
+                    <li><a href="#space-between">space-between</a></li>
+                </ul>
             </div>
         </div>
         <!------------------------------------------------------>
@@ -159,6 +198,3 @@
 
     </div>
 
-</body>
-
-</html>
