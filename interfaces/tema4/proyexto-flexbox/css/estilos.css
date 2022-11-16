@@ -78,5 +78,31 @@
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
+    width: 600px;
+    height: 500px;
+}
+
+.space-around{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    width: 600px;
+    height: 500px;
+}
+
+.strech{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    width: 600px;
+    height: 500px;
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 600px;
+    height: 500px;
 }
 /*FIN propiedades align-content*/
