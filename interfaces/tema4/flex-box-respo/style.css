@@ -1,40 +1,70 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
 
 }
 
-.general{
+* {
+    box-sizing: border-box;
+}
+
+.general {
     display: flex;
     flex-direction: column;
     max-width: 70%;
     margin: 0 auto;
 }
 
-.menu{
+.menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.encabezado{
+@media (max-width: 800px)  {
+    .menu-h2{
+        flex-direction: row;
+    }
+}
+
+.boton {
+    padding: 10px;
+    border: 0;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+.b1 {
+    border-radius: 10px;
+    background-color: rgb(80, 80, 255);
+    color: white;
+}
+
+.encabezado {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     background-color: lightgray;
     border-radius: 20px;
     padding: 50px;
-    
+
 }
 
-hr{
+.inicio {
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    background-color: rgb(112, 197, 28);
+}
+
+hr {
     width: 100%;
 }
 
-.articulo{
+.articulo {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    
+
+
 }
