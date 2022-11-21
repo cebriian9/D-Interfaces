@@ -1,0 +1,51 @@
+body{
+    margin: 0px;
+}
+
+.menu{
+    background-color: gray;
+    border: 1px solid white;
+    padding: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu>div>button{
+    background-color: rgb(150, 148, 148);
+    border: 1px solid white;
+    padding: 10px;
+}
+
+
+
+
+.articulo{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    width: 99.8%;
+    height: 99.8%;
+}
+.articulo>div{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;    
+}
+
+.arriba{
+    background-color: gray;  
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+}
+
+.abajo{
+    background-color: rgb(201, 199, 199);
+    width: 50%;
+    height: 100%;
+    margin-left: 25%;
+}
