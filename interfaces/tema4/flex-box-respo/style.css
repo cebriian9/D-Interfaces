@@ -64,7 +64,19 @@ hr {
 
 .articulo {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
 
+}
 
+.articulo div{
+    width: 50%;
+}
+
+@media (max-width:500px){
+    .articulo div{
+        width: 100%;
+    }
 }
