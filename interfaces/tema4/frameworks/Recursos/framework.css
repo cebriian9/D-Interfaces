@@ -72,6 +72,95 @@ html {
 /*
 --- FIN BORDER-BOX  
 */
-div{
-    border: 1px solid red;
+
+
+/*-------------Mis css------------------*/
+body{
+    margin: 0px;
+    background-color: lightslategray;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    background-color: white;
+    
+}
+
+.encabezado{
+    background-color: rgb(61, 61, 61);
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    
+}
+
+.logo{
+    grid-row: 1 /span 2;
+    align-self: center;
+    padding: 10px;
+}
+
+
+
+.contenido{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.menuLateral{
+    grid-column: 2;
+    grid-row: 1 /span 2;
+}
+
+.trailers{
+    background-color: rgb(61, 61, 61);
+    display: flex;
+    justify-content: space-around;
+}
+
+.tertulia{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.texto{
+    grid-column: 1 /span 2;
+}
+
+
+.cabezaF{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    padding-bottom: 150px;
+}
+
+.apps{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    height: 200px;
+}
+
+.face{
+    grid-column:  2;
+    grid-row: 1 /span 2;
+}
+
+.FMenu{
+    grid-column:  3;
+    grid-row: 1 /span 2;
+}
+
+.foo{
+    display: flex;
+    justify-content: space-between;
+    
 }
