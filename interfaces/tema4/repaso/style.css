@@ -1,0 +1,15 @@
+body{
+    background-image: url(https://www.rotulatumismo.com/blog/wp-content/uploads/2014/06/Rebajas-Corte.jpg);
+    background-size: 400px;
+    background-repeat: repeat-x;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+img.ft1{
+    width: 50px;
+    height: 50px;
+}
