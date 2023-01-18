@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Raul Rodriguez</title>
+  <title>Raúl Rodríguez</title>
   <link rel="stylesheet" href="style.css">
 
 </head>
@@ -17,14 +17,12 @@
       <a href="curriculum.html"
         class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none ">
 
-        <img class="img-" src="imagenes/logo-portfolio.png" alt="logo-portfolio" width="35" height="50">
-
-        <span class="fs-4">Raul Rodriguez</span>
+        <img class="img-fluid" src="imagenes/logo-portfolio.png" alt="logo-portfolio" width="70">
       </a>
-      <ul class="nav nav-pills">
-
-        <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Contacto</a></li>
+      <ul class="nav nav-pills d-flex align-content-center">
+        <li class="nav-item"><a href="curriculum.html" class="nav-link">Inicio</a></li>
+        <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li class="nav-item"><a href="form.html" class="nav-link active">Contacto</a></li>
       </ul>
     </header>
   </div>
@@ -34,13 +32,12 @@
 
   <!--Cuadro presentacion-->
   <div class="px-4 pt-5 my-5 text-center border-bottom bg-primary">
-    <h1 class="display-4 fw-bold text-light ">Hola soy Raul</h1>
+    <h1 class="display-4 fw-bold text-light ">Hola, soy Raúl</h1>
     <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4 text-light">Intenso programador web que programa programas que esta en la web, por eso soy
-        programador web</p>
+      <p class="lead mb-4 text-light">Desarrollador web front-end y back-end </p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-        <button type="button" class="btn btn-outline-light  btn-lg px-4">Portofolio</button>
-        <button type="button" class="btn btn-light btn-lg px-4 me-sm-3">Contactame</button>
+        <a href="#portfolio" class="btn btn-outline-light  btn-lg px-4">Portofolio</a>
+        <button type="button" class="btn btn-light btn-lg px-4 me-sm-3">Contáctame</button>
       </div>
     </div>
     <div class="overflow-hidden" style="max-height: 30vh;">
@@ -54,6 +51,7 @@
 
   <!--lo que se-->
   <div class="container ">
+    <div class="h1 fw-bold text-center mb-5">Conocimientos</div>
     <div class="row row row-cols-1 row-cols-sm-2 text-center  ">
 
 
@@ -61,11 +59,11 @@
         <div class="card">
           <h3 class="bg-primary p-4 text-light">Diseñador</h3>
           <div class="card-body">
-            <p class="card-text">Tecnologias</p>
+            <p class="card-text fw-bolder">Lenguajes y Tecnologias</p>
             <ol class="list-group list-group-flush">
-              <li class="list-group-item">Html</li>
-              <li class="list-group-item">Css</li>
-              <li class="list-group-item">Bootstrap</li>
+              <li class="list-group-item"><img src="imagenes/html.png" class="mx-2" alt="html" width="20">Html</li>
+              <li class="list-group-item"><img src="imagenes/css.png" class="mx-2" alt="css" width="20">Css</li>
+              <li class="list-group-item"><img src="imagenes/boot.png" class="mx-2" alt="bootstrap" width="20">Bootstrap</li>
             </ol>
           </div>
         </div>
@@ -76,48 +74,63 @@
         <div class="card">
           <h3 class="bg-primary p-4 text-light">Programador</h3>
           <div class="card-body">
-            <p class="card-text">Lenguajes</p>
+            <p class="card-text fw-bolder">Lenguajes</p>
             <ol class="list-group list-group-flush">
-              <li class="list-group-item">JavaScript</li>
-              <li class="list-group-item">PHP</li>
-              <li class="list-group-item">Java</li>
+              <li class="list-group-item"><img src="imagenes/js.png" class="mx-2" alt="js" width="20"> JavaScript</li>
+              <li class="list-group-item"><img src="imagenes/php.png" class="mx-2" alt="php" width="20">PHP</li>
+              <li class="list-group-item"><img src="imagenes/java.png" class="mx-2" alt="java" width="20">Java</li>
             </ol>
           </div>
         </div>
       </div>
-
-
+      <!--acordeon-->
+      <div class="container py-4">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed bg-primary text-light fw-bolder text-center " type="button" data-bs-toggle="collapse"data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Otras titulaciones
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ol class="list-group list-group-flush">
+                  <li class="list-group-item">Grado medio informatico (SMR)</li>
+                  <li class="list-group-item">Curso sobre accesibilidad</li>
+                  <li class="list-group-item">Hacer margaritas</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--acordeon-->
     </div>
   </div>
   <!--lo que se-->
 
   <!--Portfolio-->
-  <section class="py-5 text-center container">
+  <section class="py-5 text-center container" id="portfolio">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light">¿Que he estado haciendo?</h1>
-        <p class="lead text-muted">pequeños trabajos jajajaj.</p>
-        <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-        </p>
+        <p class="lead text-muted">algunos de mis trabajos mas recientes.</p>
+        
       </div>
     </div>
   </section>
 
-  <div class="album py-5 bg-light">
+  <div class="album pb-5 bg-light">
     <div class="container">
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        
+
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Tic Tac Toe</title>
-              <rect width="100%" height="100%" fill="" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Tic Tac
-                Toe</text>
-            </svg>
+            <img src="imagenes/tic-tac-toe.png" alt="3 en raya">
+            <p class="h4 text-center mt-3">Tic Tac Toe</p>
+
             <div class="card-body">
               <p class="card-text">Un pequeño juego de Tic Tac Toe (3 en raya) creado con html, flex-box, grid, css y
                 JavaScript desde 0, con funcionalidades totalmente responsivo</p>
@@ -133,12 +146,8 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Formulario</title>
-              <rect width="100%" height="100%" fill="#55595c" /><text x="30%" y="50%" fill="#eceeef"
-                dy=".3em">Formulario REchulo</text>
-            </svg>
+            <img src="imagenes/formulario.png" alt="3 en raya">
+            <p class="h4 text-center mt-3">Formulario js</p>
             <div class="card-body">
               <p class="card-text">Un formulario comleto responsivo y adaptativo, con funcionalidades en JavaScript con
                 una total validacion de campos</p>
@@ -153,13 +162,9 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">nada
-                :(</text>
-            </svg>
-            <div class="card-body p-5">
+            <img src="imagenes/tic-tac-toe.png" alt="3 en raya">
+            <p class="h4 text-center mt-3">Nada :(</p>
+            <div class="card-body">
               <p class="card-text">Pues eso, nada</p>
               <div class="d-flex justify-content-center align-items-center">
                 <div class="btn-group">
@@ -181,15 +186,22 @@
     <footer class="py-3 my-4">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Portfolio</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contacto</a></li>
+        <li class="nav-item"><a href="#portfolio" class="nav-link px-2 text-muted">Portfolio</a></li>
+        <li class="nav-item"><a href="form.html" class="nav-link px-2 text-muted">Contacto</a></li>
 
       </ul>
-      <p class="text-center text-muted">&copy; 2023 Raul Rodriguez Cebrian, Dev</p>
+      <p class="text-center text-muted">&copy; 2023 Raúl Rodríguez Cebrián, Dev</p>
     </footer>
   </div>
   <!--footer-->
 
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.js">
+    element.addEventListener("click", portfolio());
+
+function portfolio() {
+  
+}
+  </script>
 </body>
 
 </html>
