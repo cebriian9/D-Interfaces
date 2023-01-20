@@ -8,6 +8,9 @@ $custom-colors: (
   "rojo-raro": #900
 );
 
+.hover:hover {
+  opacity: 0.5;
+}
 // Merge the maps
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
