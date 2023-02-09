@@ -3,18 +3,43 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/variables-dark";
 
-// Create your own map
-$custom-colors: (
-  "rojo-raro": #900
-);
 
-.hover:hover {
-  opacity: 0.5;
+/*$theme-colors: (
+    "primary":    #ff6f00,
+    "secondary":  #381800,
+    "info":       #c7e7ff,
+    "light":      #fff7f0,
+    "dark":       #002038
+  );*/
+
+  .bg-cabecera{
+    background-image: url(examen/TriangleV2/Imagenes/slider-bg.png);
+    height: 55vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}  
+
+.monte{
+  background-image: url(examen/TriangleV2/Imagenes/hill.png);
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-// Merge the maps
-$theme-colors: map-merge($theme-colors, $custom-colors);
 
+.separador{
+  background-image: url(examen/TriangleV2/Imagenes/tour-bg.png);
+  
+  background-position: center;
+  background-size: cover;
+}  
 
-
+.footer{
+  background-image: url(examen/TriangleV2/Imagenes/footer.png);
+  
+  background-position: center;
+  background-size: cover;
+}  
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
